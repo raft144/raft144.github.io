@@ -1,1 +1,57 @@
-Hello World
+<!Doctype html>
+<html lang="es">
+
+<head>
+      <!-- Required meta tags always come first -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <script defer src="script/app.js"></script>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+      <div class="container">
+
+            <h1>Contacta con nosotros</h1>
+            <form method="post" id="firstContact" name="firstContact" action="envio.php">
+                  <fieldset class="form-group">
+                        <label for="email">Dirección de email</label>
+                        <input type="text" class="form-control" id="email" name="email" value="">
+                        <small id="mostra1" class="text-muted"></small>
+                  </fieldset>
+                  <fieldset class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" class="form-control" id="asunto" name="asunto" value="">
+                        <small id="mostra2" class="text-muted"></small>
+                  </fieldset>
+                  <fieldset class="form-group">
+                        <label for="miedad">Fecha de nacimiento:</label>
+                        <input type="date" id="miedad" name="miedad" class="form-control" value="">
+                        <small id="mostra3" class="text-muted"></small>
+                  </fieldset> 
+                  <fieldset class="form-group">
+                        <label for="dni">Dni</label>
+                        <input type="text" class="form-control" id="dni" name="dni" value="">
+                        <small id="mostra4" class="text-muted"></small>
+                  </fieldset>  
+                  <fieldset class="form-group">
+                        <label for="contenido">¿Qué te gustaría preguntarnos?</label>
+                        <textarea class="form-control" id="contenido" name="contenido" rows="3" value=""></textarea>
+                        <small id="mostra5" class="text-muted"></small>
+                  </fieldset>
+                  <fieldset class="form-group">
+                        <label for="acepto">Acepto las condiciones del servicio</label>
+                        <input type="checkbox" name="acepto" id="check" />
+                        <small id="mostra6" class="text-muted"></small>
+                  </fieldset> 
+                  <div id="error"></div>
+                  <input type="button" id="enviar" value="Enviar">
+                  <input type="button" id="borrar" onclick="btn_borrar();" value="Borrar formulario">
+                  <input type="button" id="todos" value="Usuarios Enviados">
+            </form>
+      </div>
+      <div id="cajadatos">
+      </div>
+</body>
+
+</html>
